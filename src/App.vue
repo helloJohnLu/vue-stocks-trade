@@ -1,19 +1,27 @@
 <template>
   <div class="container">
-    <ul>
-      <li>
-        <router-link tag="li" to="/"><a>Home</a></router-link>
-        <router-link tag="li" to="/portfolio"><a>Portfolio</a></router-link>
-        <router-link tag="li" to="/stocks"><a>Stocks</a></router-link>
-      </li>
-    </ul>
+    <app-header></app-header>
+    <div class="row">
+      <div class="col-xs-12">
+        <router-view></router-view>
+      </div>
+    </div>
     <hr>
-    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import appHeader from './components/Header'
+
 export default {
-  
+  components: {
+    appHeader
+  }
 }
 </script>
+
+<style>
+  body {
+    padding: 1.875rem;
+  }
+</style>
