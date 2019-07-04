@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <app-header></app-header>
     <div class="row">
       <div class="col-xs-12">
