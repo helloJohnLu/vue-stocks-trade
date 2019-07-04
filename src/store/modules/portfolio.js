@@ -50,7 +50,7 @@ const getters = {
     });
   },
   funds (state) {
-    return stat.funds;
+    return state.funds;
   }
 }
 
