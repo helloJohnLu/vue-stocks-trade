@@ -15,7 +15,10 @@ const mutations = {
     state.stocks = stocks;
   },
   'RND_STOCKS' (state) {
-
+    // 对所有的股票进行随机计算
+    state.stocks.forEach(stock => {
+      stock.price = Math.round(stock.price * (1 + Math.random() - 0.5));
+    });
   } 
 }
 
